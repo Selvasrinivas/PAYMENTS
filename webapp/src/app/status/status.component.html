@@ -1,0 +1,29 @@
+<p>status works!</p>
+
+       
+<!-- <div class="col-lg-3 col-md-6 mx-auto"  *ngFor="let itemSend of item">
+        {{itemSend.vendorId}}
+ 
+    <div> {{itemSend.name}}</div>
+    <div> {{itemSend.type}}</div>
+    <div> {{itemSend.contact}}</div>
+    <div> {{itemSend.email}}</div>
+    <div> {{itemSend.website}}</div>
+
+</div> -->
+
+
+<table align="center">
+    <th class="width">Vendor ID</th>
+    <th class="width">Name</th>
+    <th class="width">Accept</th>
+    <th class="width">Reject</th>
+    <th class="width">Remarks</th>
+    <tr class="col-lg-3 col-md-6 mx-auto"  *ngFor="let itemSend of item">
+    <td class="align">{{itemSend.vendorId}}</td>
+    <td class="align">{{itemSend.name}}</td>
+    <td class="align"><button type="submit"(click)="Accept()">Accept</button></td>
+    <td class="align"><button type="submit" (click)="Delete(itemSend.vendorId)">Reject</button></td>
+    <th class="align"><button type="submit" (click)="Remarks()">Remarks</button></th>
+    </tr>
+</table>

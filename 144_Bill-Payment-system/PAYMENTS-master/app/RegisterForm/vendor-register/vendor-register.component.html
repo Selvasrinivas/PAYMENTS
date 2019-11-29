@@ -1,0 +1,93 @@
+<p>vendor-register works!</p>
+<div class="row pb-5">
+    <div class="col-xs-11 mt-5 ml-5 mr-5 mb-5 mx-auto">
+        <div class="card mt-5">
+            <h1 class="mid">Vendor Registration</h1>
+            <div class="row ml-5 mr-5">
+                <div class="col-md-6 col-xs-12 mt-5">
+                    <label for="vendorname"><b>Vendor Name</b></label>
+                    <input type="text" class="form-control" placeholder="Enter vendor Name" formControlName="vendorname"
+                        id="vendorname">
+                </div>
+                <div class="col-md-6 col-xs-12  mt-5">
+                    <label for="reg"><b>Company Reg.No</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Company Reg.No" formControlName="reg"
+                        id="reg">
+
+                </div>
+            </div>
+            <div class="row ml-5 mr-5">
+                <div class="col-md-6 col-xs-12 mt-5">
+                    <label for="type"><b>Vendor Type</b></label>
+                    <input type="text" class="form-control" placeholder="Enter vendor type" formControlName="type"
+                        id="type">
+                </div>
+                <div class="col-md-6 col-xs-12  mt-5">
+                    <label for="address"><b>Address</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Address" formControlName="address"
+                        id="address">
+                </div>
+
+            </div>
+
+
+
+            <div class="row ml-5 mr-5">
+                <div class="col-md-6 col-xs-12 mt-5">
+                    <label for="country"><b>Country</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Country" formControlName="country"
+                        id="country">
+                </div>
+                <div class="col-md-6 col-xs-12  mt-5">
+                    <label for="state"><b>State</b></label>
+                    <input type="text" class="form-control" placeholder="Enter State" formControlName="state"
+                        id="state">
+
+                </div>
+            </div>
+            <div class="row ml-5 mr-5">
+                <div class="col-md-6 col-xs-12 mt-5">
+                    <label for="contact"><b>Contact number</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Contact Number" formControlName="contact" id="contact">
+                </div>
+                <div class="col-md-6 col-xs-12  mt-5">
+                    <label for="web"><b>Web site</b></label>
+                    <input type="text" class="form-control" placeholder="Enter Web site" formControlName="web"
+                        id="web">
+
+                </div>
+            </div>
+            <div class="row ml-5 mr-5">
+                <div class="col-md-6 col-xs-12 mt-5">
+                    <label for="issue"><b>Certificate Issued Date</b></label>
+                    <input type="date" class="form-control" placeholder="Enter Issued Date" formControlName="issue" id="issue">
+                </div>
+                <div class="col-md-6 col-xs-12  mt-5">
+                    <label for="valid"><b>Certificate Validity date</b></label>
+                    <input type="date" class="form-control" placeholder="Enter Validity date" formControlName="valid"
+                        id="valid">
+
+                </div>
+            </div>
+
+            <div class="row ml-5 mr-5">
+                    <div class="col-md-6 col-xs-12 mt-5">
+                        <label for="year"><b>Year of Establishment</b></label>
+                        <input type="date" class="form-control" placeholder="Year of Establishment" formControlName="year" id="year">
+                    </div>
+                    <div class="col-md-6 col-xs-12  mt-5">
+                        <label for="pay"><b>Payment Gateway</b></label>
+                        <input type="text" class="form-control" placeholder="Enter Payment Gateway" formControlName="pay"
+                            id="pay">
+    
+                    </div>
+                </div>
+
+            <div class="row mt-5 ml-5 mr-5 mb-5">
+                <div class="col-auto">
+                    <button type="submit" (click)="toVendor()" class="btn btn-primary mb-2">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

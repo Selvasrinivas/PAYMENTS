@@ -1,0 +1,112 @@
+<div class="row pb-5">
+        <div class="col-xs-11 mt-5 ml-5 mr-5 mb-5 mx-auto">
+                <div class="card mt-5">
+                        <h1 class="mid">Admin Registration</h1>
+                        <div class="row ml-5 mr-5">
+                                <div class="col-md-6 col-xs-12 mt-5">
+                                        <label for="firstname"><b>First Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter First Name"
+                                                formControlName="firstname" id="firstname">
+                                        <div class="text-danger"
+                                                *ngIf="firstname.touched && firstname.invalid && firstname.errors.required">
+                                                Firstname is
+                                                required</div>
+                                </div>
+                                <div class="col-md-6 col-xs-12  mt-5">
+                                        <label for="lastname"><b>Last Name</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter Last Name"
+                                                formControlName="lastname" id="lastname">
+
+                                </div>
+                        </div>
+                        <div class="row ml-5 mr-5">
+                                <div class="col-md-6 col-xs-12 mt-5">
+                                        <label for="age"><b>Age</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter Age"
+                                                formControlName="age" id="age">
+                                </div>
+                                <div class="col-md-6 col-xs-12  mt-5">
+                                        <label for="gender"><b>Gender</b></label>
+                                        <br>
+                                        <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="read" id="male"
+                                                        value="opt">
+                                                <label class="form-check-label" for="male">Male</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                                <input type="radio" class="form-check-input" name="read1" id="female"
+                                                        value="opt1">
+                                                <label class="form-check-label" for="female">Female</label>
+                                        </div>
+
+                                </div>
+                        </div>
+
+
+                        <!-- <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Dropdown button
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                        <a class="dropdown-item" href="#">Action</a>
+                                        <a class="dropdown-item" href="#">Another action</a>
+                                        <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                        </div> -->
+
+
+                        <div class="row ml-5 mr-5">
+                                <div class="col-md-6 col-xs-12 mt-5">
+                                        <label for="contact"><b>Contact Number</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter Contact Number"
+                                                formControlName="contact" id="contact">
+                                </div>
+                                <div class="col-md-6 col-xs-12  mt-5">
+                                        <label for="email"><b>Email Address</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter Email Address"
+                                                formControlName="email" id="email">
+
+                                </div>
+                        </div>
+                        <div class="row ml-5 mr-5">
+                                <div class="col-md-6 col-xs-12 mt-5">
+                                        <label for="pan"><b>PAN</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter PAN"
+                                                formControlName="pan" id="pan">
+                                </div>
+                                <div class="col-md-6 col-xs-12  mt-5">
+                                        <label for="aadhar"><b>Aadhar Number</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter Aadhar Number"
+                                                formControlName="aadhar" id="aadhar">
+
+                                </div>
+                        </div>
+                        <div class="row ml-5 mr-5">
+                                <div class="col-md-6 col-xs-12 mt-5">
+                                        <label for="id"><b>Admin Id</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter User Id"
+                                                formControlName="id" id="id">
+                                </div>
+                                <div class="col-md-6 col-xs-12  mt-5">
+                                        <label for="pass"><b>Password</b></label>
+                                        <input type="text" class="form-control" placeholder="Enter  Password"
+                                                formControlName="pass" id="pass">
+
+                                </div>
+                        </div>
+
+                        <div class="row mt-5 ml-5 mr-5 mb-5">
+                                <div class="col-auto">
+                                        <button type="submit" (click)="toVendor()"
+                                                class="btn btn-primary mb-2">Submit</button>
+                                </div>
+                        </div>
+
+
+
+
+
+                </div>
+        </div>
+</div>

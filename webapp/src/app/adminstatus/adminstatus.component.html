@@ -1,0 +1,18 @@
+<p>adminstatus works!</p>
+
+
+
+<table align="center">
+        <th class="width">Vendor ID</th>
+        <th class="width">Name</th>
+        <th></th>
+
+        <tr class="col-lg-3 col-md-6 mx-auto"  *ngFor="let itemSend of item">
+        <td class="align">{{itemSend.vendorId}}</td>
+        <td class="align">{{itemSend.name}}</td>
+        <td class="align" ><button [routerLink]="['/editvendor',itemSend.vendorId]"> Edit</button></td>
+        </tr>
+    </table>
+    <div class="wrapper">
+            <button class="button" (click)="Register()">Register</button>
+        </div>

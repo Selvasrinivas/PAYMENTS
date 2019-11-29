@@ -1,0 +1,93 @@
+
+
+
+<p>registeradmin works!</p>
+<div class="container signup my-5 mb-5 pb-5 pt-5">
+    <div class="card mt-4 shadow">
+        <div class="pt-4 pl-3 card-title">
+            <h2>Admin Registration</h2>
+        </div>
+
+        <div class="card-body">
+            <form [formGroup]="signUpForm" (submit)="this.userService.addUser(signUpForm.value)">
+
+                <!-- <div class="alert-danger col-12 px-auto" *ngIf="!this.userService.userExists">
+                    Username already exists
+                </div> -->
+                <div class="form-row mt-md-0">
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">FirstName</label>
+                        <input type="text" class="form-control" formControlName="firstName" id="firstName"
+                            placeholder="FirstName">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputPassword4">LastName</label>
+                        <input type="text" class="form-control" formControlName="lastName" id="lastName"
+                            placeholder="LastName">
+                    </div>
+                </div>
+                <div class="form-row mt-md-0">
+
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail4">Age</label>
+                        <input type="number" class="form-control" formControlName="age" id="age" placeholder="Age">
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        <label for="inputVendor">Gender</label>
+                        <select formControlName="gender" id="gender" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>Male</option>
+                            <option>Female</option>
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row mt-md-0">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">Contact Number</label>
+                        <input type="number" class="form-control" formControlName="contactNumber" id="contactNumber"
+                            placeholder="Contact Number">
+                    </div>
+        
+                </div>
+
+                <div class="form-row mt-md-0">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">PAN</label>
+                        <input type="text" class="form-control" formControlName="pan" id="pan" placeholder="S4YG86BJ">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress2">Aadhar Number</label>
+                        <input type="number" class="form-control" formControlName="aadhar" id="aadhar"
+                            placeholder="123456789012">
+                    </div>
+                </div>
+
+                <div class="form-row mt-md-0">
+                    <div class="form-group col-md-6">
+                        <label for="inputAddress">User ID</label>
+                        <input type="text" class="form-control" formControlName="usId" id="usId" placeholder="User ID">
+                        <div class="text-danger" *ngIf="usId.invalid && usId.errors.required && usId.touched">Username
+                            is
+                            required</div>
+
+                    </div>
+                    <!-- <div class="form-group col-md-6">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" formControlName="password" id="password" placeholder="Password">
+                    </div> -->
+
+                    <div class="form-group col-md-6">
+                        <label>Password</label>
+                        <input type="password" class="form-control" formControlName="password" id="password"
+                            placeholder="123456789012">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+
+            </form>
+        </div>
+    </div>
+</div>
