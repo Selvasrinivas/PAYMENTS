@@ -63,9 +63,9 @@ public class User {
 /*	@ManyToMany(fetch=FetchType.EAGER)
 	@JoinTable(name="bills", joinColumns={@JoinColumn(name="user_us_id")},
 	inverseJoinColumns={@JoinColumn(name="bill_types_bill_id")})
-	private List<bill_types> billtypeList;
+	private List<bill_types> billtypeList;*/
 
-	*/
+	
 	
 	public User(int userId, String firstName, String lastName, int age, String gender, String contactNumber, String pan,
 			String aadhar, String usId, String password, Set<role> roleList) {

@@ -20,6 +20,7 @@ import com.cognizant.authenticationservice.security.JwtAuthorizationFilter;
 
 
 
+
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
@@ -69,11 +70,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     	
     	httpSecurity.csrf().disable().httpBasic().and()
     	.authorizeRequests()
-    	.antMatchers("/user/**").permitAll()
-    	.antMatchers("/vendor/**").permitAll()
-    	.antMatchers("/bill/**").permitAll()
-    	.antMatchers("/bills").hasAnyRole("USER","ADMIN","SUPER")
-    	.antMatchers("/authenticate").hasAnyRole("USER","ADMIN","SUPER")
+    	.antMatchers("/user/**").permitAll().antMatchers("/vendor/**").permitAll().antMatchers("/bill/**").permitAll().antMatchers("/bills").hasAnyRole("USER","ADMIN","SUPER").antMatchers("/authenticate").hasAnyRole("USER","ADMIN","SUPER")
     	.anyRequest().authenticated()
     	.and()
     	.addFilter(new JwtAuthorizationFilter(authenticationManager()));

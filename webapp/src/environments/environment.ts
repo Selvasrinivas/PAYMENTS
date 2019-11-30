@@ -9,10 +9,14 @@ export const environment = {
   // userUrl:'http://localhost:1212/user',
   // vendorUrl:'http://localhost:1212/vendor',
   // billUrl:'http://localhost:1212/bill'
-  authbaseUrl : 'http://localhost:1210/authenticate',
-  userUrl:'http://localhost:1211/user',
-  vendorUrl:'http://localhost:1211/vendor',
-  billUrl:'http://localhost:1211/bill'
+  // authbaseUrl : 'http://localhost:1210/authenticate',
+  // userUrl:'http://localhost:1211/user',
+  // vendorUrl:'http://localhost:1211/vendor',
+  // billUrl:'http://localhost:1211/bill'
+  authbaseUrl:'http://localhost:2121/authentication-service/authenticate',
+  userUrl:'http://localhost:2121/billpayment-service/user',
+  vendorUrl:'http://localhost:2121/billpayment-service/vendor',
+  billUrl:'http://localhost:2121/billpayment-service/bill'
 };
 
 /*

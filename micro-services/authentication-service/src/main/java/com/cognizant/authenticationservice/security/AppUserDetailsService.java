@@ -16,8 +16,6 @@ import com.cognizant.authenticationservice.repository.UserRepository;
 
 
 
-
-
 @Service
 public class AppUserDetailsService implements UserDetailsService {
 
