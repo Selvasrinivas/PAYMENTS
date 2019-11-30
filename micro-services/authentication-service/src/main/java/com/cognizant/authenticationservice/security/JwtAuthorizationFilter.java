@@ -16,57 +16,57 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.www.BasicAuthenticationFilter;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.JwtException;
 import io.jsonwebtoken.Jwts;
 
-@SuppressWarnings("hiding")
-public class JwtAuthorizationFilter<Claims> extends BasicAuthenticationFilter {
+public class JwtAuthorizationFilter extends BasicAuthenticationFilter {
+	private static final Logger logger=LoggerFactory.getLogger(JwtAuthorizationFilter.class); 
+	 public JwtAuthorizationFilter(AuthenticationManager authenticationManager) {
+	        super(authenticationManager);
+	        logger.info("Start");
+	        logger.debug("{}: ", authenticationManager);
+	    }
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(AppUserDetailsService.class);
+	 @Override
+	    protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res,
+	            FilterChain chain) throws IOException, ServletException {
+		 logger.info("Start");
+	        String header = req.getHeader("Authorization");
+	        logger.debug(header);
+	        
+	        if (header == null || !header.startsWith("Bearer ")) {
+	            chain.doFilter(req, res);
+	            return;
+	        }
+	        UsernamePasswordAuthenticationToken authentication = getAuthentication(req);
 
-	public JwtAuthorizationFilter(AuthenticationManager authenticationManager) {
-		super(authenticationManager);
-		LOGGER.info("Start");
-		LOGGER.debug("{}: ", authenticationManager);
-	}
-
-	@Override
-	protected void doFilterInternal(HttpServletRequest req, HttpServletResponse res, FilterChain chain)
-			throws IOException, ServletException {
-		LOGGER.info("Start");
-		String header = req.getHeader("Authorization");
-		LOGGER.debug(header);
-
-		if (header == null || !header.startsWith("Bearer ")) {
-			chain.doFilter(req, res);
-			return;
-		}
-		UsernamePasswordAuthenticationToken authentication = getAuthentication(req);
-
-		SecurityContextHolder.getContext().setAuthentication(authentication);
-		chain.doFilter(req, res);
-		LOGGER.info("End");
-	}
-
-	private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
-		String token = request.getHeader("Authorization");
-		if (token != null) {
-			// parse the token.
-			Jws<io.jsonwebtoken.Claims> jws;
-			try {
-				jws = Jwts.parser().setSigningKey("secretkey").parseClaimsJws(token.replace("Bearer ", ""));
-				String user = jws.getBody().getSubject();
-				LOGGER.debug(user);
-				if (user != null) {
-					return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
-				}
-			} catch (JwtException ex) {
-				return null;
-			}
-			return null;
-		}
-		return null;
-	}
-
+	        SecurityContextHolder.getContext().setAuthentication(authentication);
+	        chain.doFilter(req, res);
+	        logger.info("End");
+	    }
+	 
+	 
+	 private UsernamePasswordAuthenticationToken getAuthentication(HttpServletRequest request) {
+	        String token = request.getHeader("Authorization");
+	        if (token != null) {
+	            // parse the token.
+	            Jws<Claims> jws;
+	            try {
+	                jws = Jwts.parser()
+	                        .setSigningKey("secretkey")
+	                        .parseClaimsJws(token.replace("Bearer ", ""));
+	                String user = jws.getBody().getSubject();
+	                logger.debug(user);
+	                if (user != null) {
+	                    return new UsernamePasswordAuthenticationToken(user, null, new ArrayList<>());
+	                }
+	            } catch (JwtException ex) {
+	                return null;
+	            }
+	            return null;
+	        }
+	        return null;
+	    }
 }

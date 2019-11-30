@@ -13,7 +13,7 @@ import com.cognizant.BillPaymentSystem.Model.bills;
 
 @Repository
 public interface BillRepository extends JpaRepository<bills, Integer> {
-	@Query(value="select bi_amount from bills where user_us_id=:amount",nativeQuery=true)
- public int findByamount(@Param (value="amount")@Valid int amount);
+	@Query(value="select bi_amount from bills where user_us_id=:amount and bill_types_bill_id=:type",nativeQuery=true)
+ public int findByamount(@Param (value="amount")@Valid int amount, @Param (value="type") @Valid int type);
 
 }

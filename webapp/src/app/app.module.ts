@@ -25,6 +25,7 @@ import { StatusComponent } from './status/status.component';
 import { AdminstatusComponent } from './adminstatus/adminstatus.component';
 import { EditvendorComponent } from './editvendor/editvendor.component';
 import { DatePipe } from '@angular/common';
+import { PaymentComponent } from './payment/payment.component';
 const appRoutes: Routes = [ 
  
   { path: 'login',component: LoginComponent},
@@ -54,6 +55,7 @@ const appRoutes: Routes = [
     StatusComponent,
     AdminstatusComponent,
     EditvendorComponent,
+    PaymentComponent,
   
   ],
   imports: [

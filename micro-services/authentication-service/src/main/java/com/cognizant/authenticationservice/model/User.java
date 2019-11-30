@@ -1,132 +1,216 @@
 package com.cognizant.authenticationservice.model;
 
-import java.math.BigDecimal;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinTable;
+import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
-import javax.persistence.JoinColumn;
+
+
+
 @Entity
 @Table(name="user")
 public class User {
-public int getUser_id() {
-		return user_id;
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="us_id")
+	private int userId;
+	@Column(name="us_firstname")
+	private String firstName;
+	
+	@Column(name="us_lastname")
+	private String lastName;
+	@Column(name="us_age")
+	private int age;
+	@Column(name="us_gender")
+	private String gender;
+	@Column(name="us_contactnumber")
+	private String contactNumber;
+	@Column(name="us_pan")
+	private String pan;
+	@Column(name="us_aadharnumber")
+	private String aadhar;
+	@Column(name="us_usID")
+	private String usId;
+	@Column(name="us_password")
+	private String password;
+	
+	
+	
+	@ManyToMany
+	@JoinTable(name="user_role", joinColumns={@JoinColumn(name="user_us_id")},
+	inverseJoinColumns={@JoinColumn(name="role_ro_id")})
+	private Set<role> roleList;
+	
+	
+	public Set<role> getRoleList() {
+		return roleList;
 	}
-	public void setUser_id(int user_id) {
-		this.user_id = user_id;
+
+
+	public void setRoleList(Set<role> roleList) {
+		this.roleList = roleList;
 	}
-	public String getFirst_name() {
-		return first_name;
+/*	@ManyToMany(fetch=FetchType.EAGER)
+	@JoinTable(name="bills", joinColumns={@JoinColumn(name="user_us_id")},
+	inverseJoinColumns={@JoinColumn(name="bill_types_bill_id")})
+	private List<bill_types> billtypeList;
+
+	*/
+	
+	public User(int userId, String firstName, String lastName, int age, String gender, String contactNumber, String pan,
+			String aadhar, String usId, String password, Set<role> roleList) {
+		super();
+		this.userId = userId;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.age = age;
+		this.gender = gender;
+		this.contactNumber = contactNumber;
+		this.pan = pan;
+		this.aadhar = aadhar;
+		this.usId = usId;
+		this.password = password;
+		this.roleList = roleList;
 	}
-	public void setFirst_name(String first_name) {
-		this.first_name = first_name;
+	
+	
+	
+	public User() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
-	public String getLast_name() {
-		return last_name;
+	
+	
+	
+
+	
+
+
+	public int getUserId() {
+		return userId;
 	}
-	public void setLast_name(String last_name) {
-		this.last_name = last_name;
+
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}
+
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+
+
+	public String getLastName() {
+		return lastName;
+	}
+
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+
 	public int getAge() {
 		return age;
 	}
+
+
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+
 	public String getGender() {
 		return gender;
 	}
+
+
 	public void setGender(String gender) {
 		this.gender = gender;
 	}
-	public String getContact_number() {
-		return contact_number;
+
+
+	public String getContactNumber() {
+		return contactNumber;
 	}
-	public void setContact_number(String contact_number) {
-		this.contact_number = contact_number;
+
+
+	public void setContactNumber(String contactNumber) {
+		this.contactNumber = contactNumber;
 	}
+
+
 	public String getPan() {
 		return pan;
 	}
+
+
 	public void setPan(String pan) {
 		this.pan = pan;
 	}
-	public String getAadhar_number() {
-		return aadhar_number;
+
+
+	public String getAadhar() {
+		return aadhar;
 	}
-	public void setAadhar_number(String aadhar_number) {
-		this.aadhar_number = aadhar_number;
+
+
+	public void setAadhar(String aadhar) {
+		this.aadhar = aadhar;
 	}
-	public String getUsr_id() {
-		return usr_id;
+
+
+	public String getUsId() {
+		return usId;
 	}
-	public void setUsr_id(String usr_id) {
-		this.usr_id = usr_id;
+
+
+	public void setUsId(String usId) {
+		this.usId = usId;
 	}
+
+
 	public String getPassword() {
 		return password;
 	}
+
+
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	public List<Role> getRoleList() {
-		return roleList;
+
+
+	
+
+
+	@Override
+	public String toString() {
+		return "User [userId=" + userId + ", firstName=" + firstName + ", lastName=" + lastName + ", age=" + age
+				+ ", gender=" + gender + ", contactNumber=" + contactNumber + ", pan=" + pan + ", aadhar=" + aadhar
+				+ ", usId=" + usId + ", password=" + password + "]";
 	}
-	public void setRoleList(List<Role> roleList) {
-		this.roleList = roleList;
-	}
-@Id
-@Column
-private int user_id;
-@Column
-private String first_name;
-@Column
-private String last_name;
-public User() {
-	super();
-	// TODO Auto-generated constructor stub
-}
-@Override
-public String toString() {
-	return "User [user_id=" + user_id + ", first_name=" + first_name + ", last_name=" + last_name + ", age=" + age
-			+ ", gender=" + gender + ", contact_number=" + contact_number + ", pan=" + pan + ", aadhar_number="
-			+ aadhar_number + ", usr_id=" + usr_id + ", password=" + password + ", roleList=" + roleList + "]";
-}
-public User(int user_id, String first_name, String last_name, int age, String gender, String contact_number, String pan,
-		String aadhar_number, String usr_id, String password, List<Role> roleList) {
-	super();
-	this.user_id = user_id;
-	this.first_name = first_name;
-	this.last_name = last_name;
-	this.age = age;
-	this.gender = gender;
-	this.contact_number = contact_number;
-	this.pan = pan;
-	this.aadhar_number = aadhar_number;
-	this.usr_id = usr_id;
-	this.password = password;
-	this.roleList = roleList;
-}
-@Column
-private int age;
-@Column
-private String gender;
-@Column
-private String contact_number;
-@Column
-private String pan;
-@Column
-private String aadhar_number;
-@Column
-private String usr_id;
-@Column
-private String password;
-@ManyToMany
-@JoinTable(name="user_role",joinColumns= {@JoinColumn(name="ur_ro_id") },inverseJoinColumns= { @JoinColumn(name="role_ro_id")})
-private List<Role> roleList;
+	
+	
+	
+
+	
+	
+	
+
 }

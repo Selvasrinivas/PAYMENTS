@@ -4,7 +4,7 @@
                 <h2>Tax Bill</h2>
             </div>
             <div class="card-body">
-                <form>
+                <form (ngForm)="onSubmit">
                     <div class="form-row mt-md-0">
                         <div class=" pl-4 form-group col-md-6">
                             <label for="id"><b>UserId</b></label>
@@ -18,7 +18,10 @@
                     <div class="form-row ">
                         <div class="pl-4 form-group col-md-12">
                             <label for="bill"><b>Bill Amount to Paid</b></label>
-                            <input type="number" class="form-control" id="bill" placeholder=" ">
+                            
+                            <div ng-controller="MyCtrl">
+                                {{no}}
+                              </div>
                         </div>
                         <div class=" pl-4 form-group col-md-12">
                             <button type="submit" class="btn btn-primary">Submit</button>

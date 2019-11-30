@@ -15,6 +15,7 @@ useradded:boolean;
 msg:string=null;
 userurl:string=environment.userUrl;
 vendorurl:string=environment.vendorUrl;
+billurl:string=environment.billUrl;
 
 i:number;
 userRole:string;
@@ -111,6 +112,13 @@ public getToken() {
     let headers=new HttpHeaders();
     headers =headers.set('Authorization',  'Bearer' +this.getToken());
     return this._httpClient.delete<any>(this.vendorurl+"/"+id,{headers});
+  }
+  public  getbill(id:number,type:number)
+  {
+    let headers=new HttpHeaders();
+    headers =headers.set('Authorization',  'Bearer' +this.getToken());
+    alert(this.billurl+"/"+id+"/"+type);
+    return this._httpClient.get<any>(this.billurl+"/"+id+"/"+type,{headers});
   }
 }
 

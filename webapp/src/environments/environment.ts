@@ -5,9 +5,14 @@
 export const environment = {
   production: false,
 
-  authbaseUrl : 'http://localhost:1212/authenticate',
-  userUrl:'http://localhost:1212/user',
-  vendorUrl:'http://localhost:1212/vendor'
+  // authbaseUrl : 'http://localhost:1212/authenticate',
+  // userUrl:'http://localhost:1212/user',
+  // vendorUrl:'http://localhost:1212/vendor',
+  // billUrl:'http://localhost:1212/bill'
+  authbaseUrl : 'http://localhost:1210/authenticate',
+  userUrl:'http://localhost:1211/user',
+  vendorUrl:'http://localhost:1211/vendor',
+  billUrl:'http://localhost:1211/bill'
 };
 
 /*

@@ -1,0 +1,126 @@
+
+      <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Paytm</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Google Pay</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Net Banking</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Card Payment</a>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+                <div *ngIf="formSubmitted">
+                        <div class="alert alert-success mt-4" role="alert" >Payment completed Successfully!!</div>
+                    </div>  
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                    <form (ngSubmit)="onSubmit()">
+                            <div class="form-row mt-md-0">
+                                <div class=" pl-4 form-group col-md-6">
+                                    <label class="label">Enter PAYTM Number:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="pl-4 form-group col-md-12">
+                                    <label class="label"><b>Amount to Paid</b></label>
+                                    <input type="number" class="form-control" id="bill">
+                                </div>
+                                <div class=" pl-4 form-group col-md-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                    <form (ngSubmit)="onSubmit()">
+                            <div class="form-row mt-md-0">
+                                <div class=" pl-4 form-group col-md-6">
+                                    <label class="label">Enter Google Pay Number:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="pl-4 form-group col-md-12">
+                                    <label class="label"><b>Amount to Paid</b></label>
+                                    <input type="number" class="form-control" id="bill">
+                                </div>
+                                <div class=" pl-4 form-group col-md-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>    
+            </div>
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                    <form (ngSubmit)="onSubmit()">
+                            <div class="form-row mt-md-0">
+                                <div class=" pl-4 form-group col-md-6">
+                                    <label class="label">Enter Customer ID:</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class=" pl-4 form-group col-md-3">
+                                        <label class="label">Enter Password:</label>
+                                        <input type="password" class="form-control">
+                                    </div>
+                            </div>
+                            <div class="form-row ">
+                                <div class="pl-4 form-group col-md-12 ml-auto">
+                                    <label class="label"><b>Amount to Paid</b></label>
+                                    <input type="number" class="form-control" id="bill">
+                                </div>
+                                <div class=" pl-4 form-group col-md-12">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+            </div>
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                    <div class="container">
+                            <div class="row">
+                                <div class="paymentCont">
+                                                <div class="headingWrap">
+                                                        <h3 class="headingTop text-center">Select Your Payment Method</h3>
+                                                </div>
+                                                <div class="paymentWrap">
+                                                    <div class="btn-group paymentBtnGroup btn-group-justified" data-toggle="buttons">
+                                                        <label class="btn paymentMethod active">
+                                                            <div class="method visa"></div>
+                                                            <input type="radio" name="options" checked> 
+                                                        </label>
+                                                        <label class="btn paymentMethod">
+                                                            <div class="method master-card"></div>
+                                                            <input type="radio" name="options"> 
+                                                        </label>
+                                                        <label class="btn paymentMethod">
+                                                            <div class="method amex"></div>
+                                                            <input type="radio" name="options">
+                                                        </label>
+                                                         <label class="btn paymentMethod">
+                                                             <div class="method vishwa"></div>
+                                                            <input type="radio" name="options"> 
+                                                        </label>
+                                                    </div>        
+                                                </div>
+                                                <div class="form-row mt-md-0">
+                                                        <div class=" pl-4 form-group col-md-6">
+                                                            <label class="label1">Name on Card:</label>
+                                                            <input type="text" class="form-control1">
+                                                        </div>
+                                                        <div class=" pl-4 form-group col-md-6">
+                                                                <label class="label1">Card Number:</label>
+                                                                <input type="number" class="form-control1">
+                                                            </div>
+                                                            <div class=" pl-4 form-group col-md-6">
+                                                                    <label class="label">CVV:</label>
+                                                                    <input type="number" class="form-control1">
+                                                                </div>
+                                                                <div class=" pl-4 form-group col-md-6">
+                                                                        <label class="label1">Expiration Date:</label>
+                                                                        <input type="date" class="form-control1">
+                                                                    </div>
+                                                    </div>
+                                                <div class=" pl-4 form-group col-md-12">
+                                                        <button type="submit" class="btn btn-primary" (click)="onSubmit()">Submit</button>
+                                                    </div>
+                                            </div>
+                                
+                            </div>
+                        </div>
+            </div>
+          </div>

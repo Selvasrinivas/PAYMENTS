@@ -1,0 +1,480 @@
+17:04:49.242 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Starting AuthenticationServiceApplication on PC391244 with PID 14448 (C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service\target\classes started by 799427 in C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service)
+17:04:49.247 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - No active profile set, falling back to default profiles: default
+17:04:49.426 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+17:04:49.427 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+17:04:53.954 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+17:04:54.196 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 210ms. Found 1 repository interfaces.
+17:04:55.157 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fdb1678e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+17:04:58.457 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1210 (http)
+17:04:58.593 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+17:04:58.594 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+17:04:58.905 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+17:04:58.905 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9477 ms
+17:04:59.513 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+17:05:00.405 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+17:05:01.356 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+17:05:02.359 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.13.Final}
+17:05:02.362 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+17:05:03.298 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+17:05:05.595 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+17:05:10.832 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+17:05:10.920 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+17:05:13.765 [restartedMain] INFO  c.c.a.SecurityConfig - Start
+17:05:14.557 [restartedMain] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:05:14.864 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+17:05:15.148 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@262d897b, org.springframework.security.web.context.SecurityContextPersistenceFilter@1f63a0d7, org.springframework.security.web.header.HeaderWriterFilter@4e6f9a09, org.springframework.web.filter.CorsFilter@7eabc3bc, org.springframework.security.web.authentication.logout.LogoutFilter@1f67e3e8, com.cognizant.authenticationservice.security.JwtAuthorizationFilter@5541054d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@c89690b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@78eaf5b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@585fd376, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@33a2ef05, org.springframework.security.web.session.SessionManagementFilter@4fa1460a, org.springframework.security.web.access.ExceptionTranslationFilter@58bd418f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60dab19b]
+17:05:15.633 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+17:05:16.759 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1210 (http) with context path ''
+17:05:16.777 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Started AuthenticationServiceApplication in 30.144 seconds (JVM running for 32.762)
+17:06:13.475 [http-nio-1210-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+17:06:13.476 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+17:06:13.491 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+17:06:13.578 [http-nio-1210-exec-1] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:06:23.967 [http-nio-1210-exec-3] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:06:24.831 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+17:06:25.055 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [ak]
+17:06:25.136 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [4]
+17:06:25.236 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [123483643782]
+17:06:25.237 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [22]
+17:06:25.238 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [8778314012]
+17:06:25.238 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [ak]
+17:06:25.238 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+17:06:25.239 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [g]
+17:06:25.239 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [sjfh7eeh]
+17:06:25.239 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+17:06:25.240 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [ak]
+17:06:25.297 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+17:06:25.298 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+17:06:25.306 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [2]
+17:06:25.307 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_USER]
+17:06:25.309 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+17:06:25.310 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+17:06:25.314 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+17:06:25.314 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+17:06:25.345 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [2]
+17:06:25.346 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434666463435]
+17:06:25.346 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [21]
+17:06:25.347 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [6785467386]
+17:06:25.347 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [user]
+17:06:25.348 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [female]
+17:06:25.348 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [chandran]
+17:06:25.348 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfgg546546]
+17:06:25.349 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+17:06:25.349 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [u]
+17:06:25.349 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+17:06:25.350 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [2]
+17:06:25.350 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [4]
+17:06:25.351 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+17:06:25.351 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+17:06:25.513 [http-nio-1210-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+17:06:26.822 [http-nio-1210-exec-4] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:06:28.215 [http-nio-1210-exec-5] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:06:31.992 [http-nio-1210-exec-6] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:29:50.474 [http-nio-1210-exec-10] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:01.386 [http-nio-1210-exec-2] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:01.391 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+17:30:01.392 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [admin]
+17:30:01.393 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [3]
+17:30:01.393 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [083200239200]
+17:30:01.394 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [12]
+17:30:01.395 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [9823029309]
+17:30:01.395 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [super]
+17:30:01.395 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [male]
+17:30:01.396 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [1]
+17:30:01.397 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [jd980909083]
+17:30:01.397 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+17:30:01.398 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [admin]
+17:30:01.399 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+17:30:01.400 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+17:30:01.418 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [3]
+17:30:01.419 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_SUPER]
+17:30:01.419 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [3]
+17:30:01.420 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [3]
+17:30:01.421 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+17:30:01.422 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+17:30:01.423 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [3]
+17:30:01.423 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [3]
+17:30:01.424 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [3]
+17:30:01.503 [http-nio-1210-exec-2] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+17:30:01.667 [http-nio-1210-exec-3] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:02.953 [http-nio-1210-exec-4] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:03.029 [http-nio-1210-exec-5] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:15.304 [http-nio-1210-exec-8] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:20.669 [http-nio-1210-exec-9] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:20.674 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+17:30:20.674 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [a]
+17:30:20.676 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [1]
+17:30:20.676 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [434634676635]
+17:30:20.677 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [20]
+17:30:20.677 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [9898769765]
+17:30:20.677 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [admin]
+17:30:20.678 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [male]
+17:30:20.678 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [c]
+17:30:20.679 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dhfg546546]
+17:30:20.679 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+17:30:20.679 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [a]
+17:30:20.680 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+17:30:20.681 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+17:30:20.682 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [1]
+17:30:20.682 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_ADMIN]
+17:30:20.683 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+17:30:20.683 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+17:30:20.684 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+17:30:20.685 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+17:30:20.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [1]
+17:30:20.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+17:30:20.727 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+17:30:20.798 [http-nio-1210-exec-9] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+17:30:20.902 [http-nio-1210-exec-10] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:22.100 [http-nio-1210-exec-1] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+17:30:22.118 [http-nio-1210-exec-2] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:13:12.381 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Starting AuthenticationServiceApplication on PC391244 with PID 4360 (C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service\target\classes started by 799427 in C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service)
+18:13:12.411 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - No active profile set, falling back to default profiles: default
+18:13:12.583 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:13:12.583 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:13:18.896 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:13:19.157 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 213ms. Found 1 repository interfaces.
+18:13:20.306 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94b24742] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:13:21.462 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1210 (http)
+18:13:21.604 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:13:21.604 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+18:13:21.862 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:13:21.863 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9280 ms
+18:13:22.395 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:13:22.703 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:13:22.957 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:13:23.452 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.3.13.Final}
+18:13:23.462 [restartedMain] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found
+18:13:24.017 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+18:13:24.481 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:13:27.703 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:13:27.755 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+18:13:29.675 [restartedMain] INFO  c.c.a.SecurityConfig - Start
+18:13:29.930 [restartedMain] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:13:30.070 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:13:30.323 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71bfe59, org.springframework.security.web.context.SecurityContextPersistenceFilter@34ba0e04, org.springframework.security.web.header.HeaderWriterFilter@78d86970, org.springframework.web.filter.CorsFilter@2a633b6e, org.springframework.security.web.authentication.logout.LogoutFilter@713cda7a, com.cognizant.authenticationservice.security.JwtAuthorizationFilter@804f479, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@16775733, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65473582, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a8f1e84, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@613ec91d, org.springframework.security.web.session.SessionManagementFilter@8fb0298, org.springframework.security.web.access.ExceptionTranslationFilter@2727dd43, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6431c9ec]
+18:13:30.781 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:13:31.877 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1210 (http) with context path ''
+18:13:31.914 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Started AuthenticationServiceApplication in 21.165 seconds (JVM running for 22.439)
+18:14:19.718 [http-nio-1210-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:14:19.719 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:14:19.731 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 12 ms
+18:14:19.812 [http-nio-1210-exec-1] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:14:31.106 [http-nio-1210-exec-3] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:14:31.394 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:14:31.425 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [u]
+18:14:31.435 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [2]
+18:14:31.445 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [434666463435]
+18:14:31.446 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [21]
+18:14:31.446 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [6785467386]
+18:14:31.447 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [user]
+18:14:31.448 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [female]
+18:14:31.449 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [chandran]
+18:14:31.450 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dhfgg546546]
+18:14:31.450 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:14:31.451 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [u]
+18:14:31.487 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:14:31.488 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:31.503 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [2]
+18:14:31.504 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_USER]
+18:14:31.505 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [2]
+18:14:31.506 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:14:31.509 [http-nio-1210-exec-3] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:14:31.510 [http-nio-1210-exec-3] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:31.512 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [2]
+18:14:31.512 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:14:31.513 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [2]
+18:14:31.514 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [4]
+18:14:31.515 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [123483643782]
+18:14:31.516 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [22]
+18:14:31.517 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [8778314012]
+18:14:31.517 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [ak]
+18:14:31.518 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [Male]
+18:14:31.519 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [g]
+18:14:31.519 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [sjfh7eeh]
+18:14:31.520 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+18:14:31.521 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [ak]
+18:14:31.521 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:14:31.522 [http-nio-1210-exec-3] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+18:14:31.698 [http-nio-1210-exec-3] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingRequestHeaderException: Missing request header 'Authorization' for method parameter of type String]
+18:14:32.008 [http-nio-1210-exec-4] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:14:33.094 [http-nio-1210-exec-5] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:14:34.560 [http-nio-1210-exec-6] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:16:23.207 [Thread-1] INFO  o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+18:16:23.209 [Thread-1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+18:16:23.242 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+18:16:23.412 [Thread-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+18:16:24.021 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Starting AuthenticationServiceApplication on PC391244 with PID 4360 (C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service\target\classes started by 799427 in C:\Users\799427\Desktop\Bootstrap\micro-services\authentication-service)
+18:16:24.022 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - No active profile set, falling back to default profiles: default
+18:16:25.039 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:16:25.061 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 21ms. Found 1 repository interfaces.
+18:16:25.150 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$94b24742] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:16:25.641 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1210 (http)
+18:16:25.642 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:16:25.643 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+18:16:25.679 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:16:25.680 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1649 ms
+18:16:25.733 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [1128B3251D2B63B0CDA539B721E220A9]
+18:16:25.785 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+18:16:26.212 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+18:16:26.221 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+18:16:26.336 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:16:27.684 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:16:27.696 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+18:16:27.897 [restartedMain] INFO  c.c.a.SecurityConfig - Start
+18:16:27.903 [restartedMain] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:16:27.920 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:16:27.964 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6aa6a45c, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c24a790, org.springframework.security.web.header.HeaderWriterFilter@242d3533, org.springframework.web.filter.CorsFilter@69e0a4aa, org.springframework.security.web.authentication.logout.LogoutFilter@66d594e6, com.cognizant.authenticationservice.security.JwtAuthorizationFilter@6081d9c9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e789837, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@592c5fd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@14e56d6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f12495c, org.springframework.security.web.session.SessionManagementFilter@88f59be, org.springframework.security.web.access.ExceptionTranslationFilter@117a96f4, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@15bf5875]
+18:16:28.037 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:16:28.159 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1210 (http) with context path ''
+18:16:28.160 [restartedMain] INFO  c.c.a.AuthenticationServiceApplication - Started AuthenticationServiceApplication in 4.201 seconds (JVM running for 198.684)
+18:16:28.187 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+18:18:42.380 [http-nio-1210-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:18:42.382 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:18:42.386 [http-nio-1210-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+18:18:42.509 [http-nio-1210-exec-2] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:18:42.601 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:18:42.601 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [ak]
+18:18:42.631 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [4]
+18:18:42.632 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [123483643782]
+18:18:42.632 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [22]
+18:18:42.632 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [8778314012]
+18:18:42.633 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [ak]
+18:18:42.633 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+18:18:42.634 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [g]
+18:18:42.634 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [sjfh7eeh]
+18:18:42.634 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+18:18:42.634 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [ak]
+18:18:42.636 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:18:42.636 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:18:42.653 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [2]
+18:18:42.654 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_USER]
+18:18:42.654 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+18:18:42.655 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:18:42.655 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:18:42.656 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:18:42.657 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [2]
+18:18:42.657 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434666463435]
+18:18:42.658 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [21]
+18:18:42.658 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [6785467386]
+18:18:42.659 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [user]
+18:18:42.659 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [female]
+18:18:42.660 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [chandran]
+18:18:42.660 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfgg546546]
+18:18:42.661 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:18:42.661 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [u]
+18:18:42.662 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:18:42.663 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [2]
+18:18:42.663 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [4]
+18:18:42.664 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:18:42.665 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+18:19:32.620 [http-nio-1210-exec-4] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:19:32.623 [http-nio-1210-exec-4] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:19:32.624 [http-nio-1210-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [a]
+18:19:32.626 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [1]
+18:19:32.627 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [434634676635]
+18:19:32.628 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [20]
+18:19:32.628 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [9898769765]
+18:19:32.629 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [admin]
+18:19:32.630 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [male]
+18:19:32.630 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [c]
+18:19:32.631 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dhfg546546]
+18:19:32.632 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:19:32.633 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [a]
+18:19:32.634 [http-nio-1210-exec-4] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:19:32.635 [http-nio-1210-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:19:32.636 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [1]
+18:19:32.637 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_ADMIN]
+18:19:32.638 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+18:19:32.639 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:19:32.640 [http-nio-1210-exec-4] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:19:32.641 [http-nio-1210-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:19:32.643 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [1]
+18:19:32.643 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:19:32.643 [http-nio-1210-exec-4] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+18:19:50.849 [http-nio-1210-exec-6] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:19:50.852 [http-nio-1210-exec-6] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:19:50.853 [http-nio-1210-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [admin]
+18:19:50.854 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [3]
+18:19:50.855 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [083200239200]
+18:19:50.856 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [12]
+18:19:50.857 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [9823029309]
+18:19:50.857 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [super]
+18:19:50.858 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [male]
+18:19:50.859 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [1]
+18:19:50.860 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [jd980909083]
+18:19:50.860 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:19:50.861 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [admin]
+18:19:50.862 [http-nio-1210-exec-6] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:19:50.863 [http-nio-1210-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:19:50.865 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [3]
+18:19:50.866 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_SUPER]
+18:19:50.866 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [3]
+18:19:50.867 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [3]
+18:19:50.868 [http-nio-1210-exec-6] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:19:50.870 [http-nio-1210-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:19:50.873 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [3]
+18:19:50.874 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [3]
+18:19:50.875 [http-nio-1210-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [3]
+18:24:25.241 [http-nio-1210-exec-8] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:24:25.245 [http-nio-1210-exec-8] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:24:25.246 [http-nio-1210-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [pk]
+18:24:25.247 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [5]
+18:24:25.248 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [24242344444]
+18:24:25.249 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [23]
+18:24:25.249 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [2293777777]
+18:24:25.250 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [pk]
+18:24:25.251 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+18:24:25.252 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [aswin]
+18:24:25.252 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dsfsfjhf738hd]
+18:24:25.253 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$Lil0kfLOXHAaJG65jpfsoeGxw/qmAK7aQ9tgd0OWXwMTWeXp1boPS]
+18:24:25.254 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [pk]
+18:24:25.255 [http-nio-1210-exec-8] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:24:25.255 [http-nio-1210-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:24:25.257 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [1]
+18:24:25.258 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_ADMIN]
+18:24:25.259 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]
+18:24:25.260 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:24:25.261 [http-nio-1210-exec-8] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:24:25.262 [http-nio-1210-exec-8] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:24:25.263 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [1]
+18:24:25.264 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434634676635]
+18:24:25.265 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [20]
+18:24:25.265 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [9898769765]
+18:24:25.265 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [admin]
+18:24:25.266 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [male]
+18:24:25.266 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [c]
+18:24:25.267 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfg546546]
+18:24:25.268 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:24:25.269 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [a]
+18:24:25.270 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:24:25.270 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+18:24:25.271 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [5]
+18:24:25.272 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:24:25.273 [http-nio-1210-exec-8] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]
+18:25:49.687 [http-nio-1210-exec-9] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:25:49.691 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:25:49.692 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [gokul]
+18:25:49.707 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [6]
+18:25:49.707 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [34242342432]
+18:25:49.708 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [22]
+18:25:49.708 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [6300125555]
+18:25:49.708 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [gokul]
+18:25:49.709 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+18:25:49.709 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [e]
+18:25:49.709 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [Dsawr3r]
+18:25:49.709 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$4uM8JAWKhLA7nl.G2Z0/ZedGeR7h7/JO9GylEFGJl/Pmf/GVDeFGG]
+18:25:49.710 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [gokul]
+18:25:49.710 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:25:49.711 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [6]
+18:25:49.713 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [2]
+18:25:49.714 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_USER]
+18:25:49.715 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [6]
+18:25:49.716 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:25:49.717 [http-nio-1210-exec-9] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:25:49.717 [http-nio-1210-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:25:49.725 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [2]
+18:25:49.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434666463435]
+18:25:49.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [21]
+18:25:49.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [6785467386]
+18:25:49.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [user]
+18:25:49.726 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [female]
+18:25:49.727 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [chandran]
+18:25:49.727 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfgg546546]
+18:25:49.727 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:25:49.727 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [u]
+18:25:49.728 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:25:49.728 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [2]
+18:25:49.730 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [4]
+18:25:49.730 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [123483643782]
+18:25:49.731 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [22]
+18:25:49.732 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [8778314012]
+18:25:49.733 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [ak]
+18:25:49.734 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [Male]
+18:25:49.734 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [g]
+18:25:49.735 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [sjfh7eeh]
+18:25:49.735 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+18:25:49.736 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [ak]
+18:25:49.736 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:25:49.737 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [4]
+18:25:49.737 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [6]
+18:25:49.738 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [2]
+18:25:49.738 [http-nio-1210-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [6]
+18:26:06.113 [http-nio-1210-exec-2] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:26:06.118 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:26:06.119 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [pk]
+18:26:06.120 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [5]
+18:26:06.121 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [24242344444]
+18:26:06.122 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [23]
+18:26:06.123 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [2293777777]
+18:26:06.124 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [pk]
+18:26:06.125 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+18:26:06.125 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [aswin]
+18:26:06.126 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dsfsfjhf738hd]
+18:26:06.126 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$Lil0kfLOXHAaJG65jpfsoeGxw/qmAK7aQ9tgd0OWXwMTWeXp1boPS]
+18:26:06.127 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [pk]
+18:26:06.128 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:26:06.128 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:26:06.129 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [1]
+18:26:06.130 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_ADMIN]
+18:26:06.131 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]
+18:26:06.132 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:26:06.133 [http-nio-1210-exec-2] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:26:06.133 [http-nio-1210-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:26:06.134 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [1]
+18:26:06.135 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434634676635]
+18:26:06.135 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [20]
+18:26:06.136 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [9898769765]
+18:26:06.136 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [admin]
+18:26:06.137 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [male]
+18:26:06.138 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [c]
+18:26:06.139 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfg546546]
+18:26:06.139 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:26:06.140 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [a]
+18:26:06.141 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:26:06.142 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+18:26:06.142 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [5]
+18:26:06.143 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:26:06.143 [http-nio-1210-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]
+18:29:00.127 [http-nio-1210-exec-5] INFO  c.c.a.s.JwtAuthorizationFilter - Start
+18:29:00.132 [http-nio-1210-exec-5] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:29:00.133 [http-nio-1210-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [pk]
+18:29:00.135 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [5]
+18:29:00.137 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [24242344444]
+18:29:00.137 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [23]
+18:29:00.138 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [2293777777]
+18:29:00.138 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [pk]
+18:29:00.139 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [Male]
+18:29:00.140 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [aswin]
+18:29:00.140 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dsfsfjhf738hd]
+18:29:00.141 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$Lil0kfLOXHAaJG65jpfsoeGxw/qmAK7aQ9tgd0OWXwMTWeXp1boPS]
+18:29:00.141 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [pk]
+18:29:00.142 [http-nio-1210-exec-5] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_2_0_, rolelist0_.role_ro_id as role_ro_2_2_0_, role1_.ro_id as ro_id1_0_1_, role1_.ro_name as ro_name2_0_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:29:00.143 [http-nio-1210-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:29:00.145 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_0_1_] : [INTEGER]) - [1]
+18:29:00.145 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_0_1_] : [VARCHAR]) - [ROLE_ADMIN]
+18:29:00.146 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]
+18:29:00.146 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:29:00.158 [http-nio-1210-exec-5] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_2_0_, userlist0_.user_us_id as user_us_1_2_0_, user1_.us_id as us_id1_1_1_, user1_.us_aadharnumber as us_aadha2_1_1_, user1_.us_age as us_age3_1_1_, user1_.us_contactnumber as us_conta4_1_1_, user1_.us_firstname as us_first5_1_1_, user1_.us_gender as us_gende6_1_1_, user1_.us_lastname as us_lastn7_1_1_, user1_.us_pan as us_pan8_1_1_, user1_.us_password as us_passw9_1_1_, user1_.us_usid as us_usid10_1_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:29:00.158 [http-nio-1210-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:29:00.160 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [1]
+18:29:00.160 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_1_1_] : [VARCHAR]) - [434634676635]
+18:29:00.161 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_1_1_] : [INTEGER]) - [20]
+18:29:00.161 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_1_1_] : [VARCHAR]) - [9898769765]
+18:29:00.161 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_1_1_] : [VARCHAR]) - [admin]
+18:29:00.162 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_1_1_] : [VARCHAR]) - [male]
+18:29:00.162 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_1_1_] : [VARCHAR]) - [c]
+18:29:00.162 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_1_1_] : [VARCHAR]) - [dhfg546546]
+18:29:00.162 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_1_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:29:00.163 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_1_1_] : [VARCHAR]) - [a]
+18:29:00.163 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:29:00.163 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [1]
+18:29:00.163 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_1_1_] : [INTEGER]) - [5]
+18:29:00.164 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_2_0_] : [INTEGER]) - [1]
+18:29:00.164 [http-nio-1210-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_2_0_] : [INTEGER]) - [5]

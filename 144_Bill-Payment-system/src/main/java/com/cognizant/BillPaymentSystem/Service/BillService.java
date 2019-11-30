@@ -30,8 +30,8 @@ public class BillService {
 		
 	}
 	
-	public int getByamount(@Valid int amount){
-		return billRepository.findByamount(amount);
+	public int getByamount(@Valid int amount,@Valid int type){
+		return billRepository.findByamount(amount,type);
 		
 	}
 	

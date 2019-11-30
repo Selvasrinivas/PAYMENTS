@@ -20,6 +20,7 @@ import { AppComponent } from './app.component';
 import { StatusComponent } from './status/status.component';
 import { AdminstatusComponent } from './adminstatus/adminstatus.component';
 import { EditvendorComponent } from './editvendor/editvendor.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const routes: Routes = [
@@ -42,7 +43,8 @@ const routes: Routes = [
   {path:   'status', component:StatusComponent},
   { path: 'other',component: OthersComponent},
   {path: 'adminstatus',component:AdminstatusComponent},
-  {path: 'editvendor/:vendorId',component:EditvendorComponent}
+  {path: 'editvendor/:vendorId',component:EditvendorComponent},
+  {path:'paybill',component:PaymentComponent}
 ];
 
 @NgModule({

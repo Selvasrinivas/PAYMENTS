@@ -3,38 +3,18 @@ package com.cognizant.authenticationservice;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(value = HttpStatus.BAD_REQUEST, reason = "User already exists")
+@ResponseStatus(value=HttpStatus.BAD_REQUEST,reason="User Already Exits")
 public class UserAlreadyExistsException extends Exception{
 
-	@Override
-	public String toString() {
-		return "UserAlreadyExistsException []";
-	}
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public UserAlreadyExistsException() {
-		System.out.println("User already exists");
-	}
-
-	
-
-	public UserAlreadyExistsException(String message, Throwable cause, boolean enableSuppression,
-			boolean writableStackTrace) {
-		super(message, cause, enableSuppression, writableStackTrace);
+		System.out.println("User Already Exits");
 		// TODO Auto-generated constructor stub
 	}
 
-	public UserAlreadyExistsException(String message, Throwable cause) {
-		super(message, cause);
-		// TODO Auto-generated constructor stub
-	}
-
-	public UserAlreadyExistsException(String message) {
-		super(message);
-		// TODO Auto-generated constructor stub
-	}
-
-	public UserAlreadyExistsException(Throwable cause) {
-		super(cause);
-		// TODO Auto-generated constructor stub
-	}
 
 }

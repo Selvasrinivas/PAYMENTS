@@ -1,0 +1,846 @@
+18:12:30.090 [restartedMain] INFO  c.c.b.BillpaymentServiceApplication - Starting BillpaymentServiceApplication on PC391244 with PID 11772 (C:\Users\799427\Desktop\Bootstrap\micro-services\billpayment-service\target\classes started by 799427 in C:\Users\799427\Desktop\Bootstrap\micro-services\billpayment-service)
+18:12:30.101 [restartedMain] INFO  c.c.b.BillpaymentServiceApplication - No active profile set, falling back to default profiles: default
+18:12:30.223 [restartedMain] INFO  o.s.b.d.restart.ChangeableUrls - The Class-Path manifest attribute in C:\Users\799427\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.2\jaxb-runtime-2.3.2.jar referenced one or more files that do not exist: file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.xml.bind-api-2.3.2.jar,file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/txw2-2.3.2.jar,file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/istack-commons-runtime-3.0.8.jar,file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/stax-ex-1.8.1.jar,file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/FastInfoset-1.2.16.jar,file:/C:/Users/799427/.m2/repository/org/glassfish/jaxb/jaxb-runtime/2.3.2/jakarta.activation-api-1.2.1.jar
+18:12:30.224 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+18:12:30.224 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+18:12:31.832 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+18:12:32.023 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 169ms. Found 4 repository interfaces.
+18:12:32.838 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+18:12:33.538 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1211 (http)
+18:12:33.557 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+18:12:33.558 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+18:12:33.720 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+18:12:33.721 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3496 ms
+18:12:34.652 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+18:12:36.751 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+18:12:38.318 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+18:12:39.008 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+18:12:40.081 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+18:12:40.502 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+18:12:44.394 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+18:12:44.448 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+18:12:44.512 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+18:12:44.671 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+18:12:46.741 [restartedMain] INFO  c.c.b.SecurityConfig - Start
+18:12:47.189 [restartedMain] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:12:47.791 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4431e072, org.springframework.security.web.context.SecurityContextPersistenceFilter@6316a26f, org.springframework.security.web.header.HeaderWriterFilter@63a1024b, org.springframework.web.filter.CorsFilter@65728544, org.springframework.security.web.authentication.logout.LogoutFilter@72cf99b9, com.cognizant.billpaymentservice.security.JwtAuthorizationFilter@fd61ec6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a88a56, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@35c2d7c2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3b7c0d40, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@672fdbd, org.springframework.security.web.session.SessionManagementFilter@25bbcafb, org.springframework.security.web.access.ExceptionTranslationFilter@1cfc2baa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b1b3138]
+18:12:47.956 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+18:12:48.971 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1211 (http) with context path ''
+18:12:48.976 [restartedMain] INFO  c.c.b.BillpaymentServiceApplication - Started BillpaymentServiceApplication in 19.753 seconds (JVM running for 20.338)
+18:13:58.078 [http-nio-1211-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+18:13:58.079 [http-nio-1211-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+18:13:58.185 [http-nio-1211-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 106 ms
+18:13:58.290 [http-nio-1211-exec-1] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:13:58.757 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select bi_amount from bills where user_us_id=? and bill_types_bill_id=?
+18:13:58.879 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:13:58.880 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [6]
+18:13:59.013 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bi_amount] : [INTEGER]) - [6000]
+18:13:59.654 [http-nio-1211-exec-2] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:14:09.797 [http-nio-1211-exec-6] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:14:10.924 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select user0_.us_id as us_id1_3_, user0_.us_aadharnumber as us_aadha2_3_, user0_.us_age as us_age3_3_, user0_.us_contactnumber as us_conta4_3_, user0_.us_firstname as us_first5_3_, user0_.us_gender as us_gende6_3_, user0_.us_lastname as us_lastn7_3_, user0_.us_pan as us_pan8_3_, user0_.us_password as us_passw9_3_, user0_.us_usid as us_usid10_3_ from user user0_
+18:14:10.927 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_] : [INTEGER]) - [1]
+18:14:11.025 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_] : [VARCHAR]) - [434634676635]
+18:14:11.026 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_] : [INTEGER]) - [20]
+18:14:11.027 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_] : [VARCHAR]) - [9898769765]
+18:14:11.028 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_] : [VARCHAR]) - [admin]
+18:14:11.029 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_] : [VARCHAR]) - [male]
+18:14:11.030 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_] : [VARCHAR]) - [c]
+18:14:11.031 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_] : [VARCHAR]) - [dhfg546546]
+18:14:11.032 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:14:11.032 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_] : [VARCHAR]) - [a]
+18:14:11.036 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_] : [INTEGER]) - [2]
+18:14:11.036 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_] : [VARCHAR]) - [434666463435]
+18:14:11.037 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_] : [INTEGER]) - [21]
+18:14:11.037 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_] : [VARCHAR]) - [6785467386]
+18:14:11.038 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_] : [VARCHAR]) - [user]
+18:14:11.038 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_] : [VARCHAR]) - [female]
+18:14:11.039 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_] : [VARCHAR]) - [chandran]
+18:14:11.040 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_] : [VARCHAR]) - [dhfgg546546]
+18:14:11.040 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:14:11.041 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_] : [VARCHAR]) - [u]
+18:14:11.041 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_] : [INTEGER]) - [3]
+18:14:11.042 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_] : [VARCHAR]) - [083200239200]
+18:14:11.043 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_] : [INTEGER]) - [12]
+18:14:11.043 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_] : [VARCHAR]) - [9823029309]
+18:14:11.044 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_] : [VARCHAR]) - [super]
+18:14:11.044 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_] : [VARCHAR]) - [male]
+18:14:11.045 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_] : [VARCHAR]) - [1]
+18:14:11.045 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_] : [VARCHAR]) - [jd980909083]
+18:14:11.045 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:14:11.046 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_] : [VARCHAR]) - [admin]
+18:14:11.046 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_] : [INTEGER]) - [4]
+18:14:11.046 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_] : [VARCHAR]) - [123483643782]
+18:14:11.047 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_] : [INTEGER]) - [22]
+18:14:11.048 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_] : [VARCHAR]) - [8778314012]
+18:14:11.048 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_] : [VARCHAR]) - [ak]
+18:14:11.049 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_] : [VARCHAR]) - [Male]
+18:14:11.049 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_] : [VARCHAR]) - [g]
+18:14:11.050 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_] : [VARCHAR]) - [sjfh7eeh]
+18:14:11.051 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+18:14:11.051 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_] : [VARCHAR]) - [ak]
+18:14:11.236 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:14:11.237 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:14:11.258 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:14:11.258 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:14:11.260 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:14:11.261 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:11.292 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [1]
+18:14:11.293 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Electricity]
+18:14:11.295 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.296 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:14:11.350 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [2]
+18:14:11.351 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Telephone]
+18:14:11.351 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.352 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:14:11.352 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [3]
+18:14:11.353 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [DTH]
+18:14:11.353 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.354 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:14:11.355 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [4]
+18:14:11.355 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Insurance]
+18:14:11.356 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.356 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:14:11.357 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [5]
+18:14:11.358 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Tax]
+18:14:11.358 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.359 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:14:11.359 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [6]
+18:14:11.360 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Credit Card]
+18:14:11.361 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.361 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:14:11.361 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [7]
+18:14:11.362 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Loan account]
+18:14:11.363 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.364 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:14:11.365 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [8]
+18:14:11.365 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Others]
+18:14:11.365 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.366 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:14:11.367 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.367 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [8]
+18:14:11.369 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.369 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:14:11.370 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.370 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.371 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [7]
+18:14:11.372 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.373 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:14:11.373 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.374 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.375 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [6]
+18:14:11.376 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.377 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:14:11.377 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.378 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.379 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:14:11.380 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.381 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:14:11.382 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.383 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.384 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:14:11.385 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.386 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:14:11.386 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.387 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.388 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:14:11.389 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.389 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:14:11.390 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.390 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.391 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:11.392 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.393 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:14:11.394 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.395 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:14:11.396 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:14:11.398 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.399 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:14:11.399 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:14:11.400 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:14:11.400 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:14:11.598 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_4_0_, rolelist0_.role_ro_id as role_ro_2_4_0_, role1_.ro_id as ro_id1_2_1_, role1_.ro_name as ro_name2_2_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:14:11.599 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:14:11.600 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_2_1_] : [INTEGER]) - [1]
+18:14:11.601 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_2_1_] : [VARCHAR]) - [ROLE_ADMIN]
+18:14:11.601 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [1]
+18:14:11.602 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [1]
+18:14:11.603 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_4_0_, userlist0_.user_us_id as user_us_1_4_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:14:11.603 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:14:11.604 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [1]
+18:14:11.605 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [1]
+18:14:11.605 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [1]
+18:14:11.608 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_4_0_, rolelist0_.role_ro_id as role_ro_2_4_0_, role1_.ro_id as ro_id1_2_1_, role1_.ro_name as ro_name2_2_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:14:11.608 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:11.610 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_2_1_] : [INTEGER]) - [2]
+18:14:11.610 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_2_1_] : [VARCHAR]) - [ROLE_USER]
+18:14:11.611 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [2]
+18:14:11.612 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:14:11.613 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_4_0_, userlist0_.user_us_id as user_us_1_4_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:14:11.614 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:11.615 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:14:11.616 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:14:11.616 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [2]
+18:14:11.617 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [4]
+18:14:11.617 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:14:11.618 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [4]
+18:14:11.619 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_4_0_, rolelist0_.role_ro_id as role_ro_2_4_0_, role1_.ro_id as ro_id1_2_1_, role1_.ro_name as ro_name2_2_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:14:11.619 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:14:11.621 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_2_1_] : [INTEGER]) - [3]
+18:14:11.621 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_2_1_] : [VARCHAR]) - [ROLE_SUPER]
+18:14:11.622 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [3]
+18:14:11.622 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [3]
+18:14:11.623 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_4_0_, userlist0_.user_us_id as user_us_1_4_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:14:11.624 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:14:11.625 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [3]
+18:14:11.626 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [3]
+18:14:11.626 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [3]
+18:14:11.628 [http-nio-1211-exec-6] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_4_0_, rolelist0_.role_ro_id as role_ro_2_4_0_, role1_.ro_id as ro_id1_2_1_, role1_.ro_name as ro_name2_2_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:14:11.629 [http-nio-1211-exec-6] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:14:11.631 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_2_1_] : [INTEGER]) - [2]
+18:14:11.631 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [4]
+18:14:11.632 [http-nio-1211-exec-6] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:14:11.971 [http-nio-1211-exec-5] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:14:48.320 [http-nio-1211-exec-10] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:14:48.334 [http-nio-1211-exec-10] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:14:48.408 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:14:48.409 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:14:48.455 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:14:48.456 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:14:48.457 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:14:48.458 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:14:48.458 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:14:48.459 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:14:48.459 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:14:48.460 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:14:48.461 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:14:48.461 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:14:48.462 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:14:48.463 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:14:48.463 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:14:48.464 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:14:48.465 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:14:48.466 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:14:48.466 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:14:48.467 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:14:48.467 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:14:48.468 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:14:48.468 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:14:48.469 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:14:48.469 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:14:48.470 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:14:48.470 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:14:48.471 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:14:48.471 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:14:48.472 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:14:48.473 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:14:48.475 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:14:48.476 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:14:48.477 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:14:48.478 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:14:48.478 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:14:48.479 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:14:48.479 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:14:48.480 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:14:48.481 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:14:48.481 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:14:48.482 [http-nio-1211-exec-10] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:14:48.483 [http-nio-1211-exec-10] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:14:48.484 [http-nio-1211-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:14:48.562 [http-nio-1211-exec-10] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:14:48.563 [http-nio-1211-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:14:48.565 [http-nio-1211-exec-10] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:14:48.566 [http-nio-1211-exec-10] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:14:48.605 [http-nio-1211-exec-1] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:14:58.614 [http-nio-1211-exec-3] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:15:07.846 [http-nio-1211-exec-5] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:15:07.983 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:15:07.997 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [u]
+18:15:08.000 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id] : [INTEGER]) - [2]
+18:15:08.001 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadharnumber] : [VARCHAR]) - [434666463435]
+18:15:08.002 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age] : [INTEGER]) - [21]
+18:15:08.002 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_contactnumber] : [VARCHAR]) - [6785467386]
+18:15:08.003 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_firstname] : [VARCHAR]) - [user]
+18:15:08.003 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gender] : [VARCHAR]) - [female]
+18:15:08.004 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastname] : [VARCHAR]) - [chandran]
+18:15:08.004 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan] : [VARCHAR]) - [dhfgg546546]
+18:15:08.005 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_password] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:15:08.006 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid] : [VARCHAR]) - [u]
+18:15:08.007 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:15:08.007 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:15:08.009 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [1]
+18:15:08.010 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Electricity]
+18:15:08.011 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.012 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:15:08.014 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [2]
+18:15:08.014 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Telephone]
+18:15:08.014 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.014 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:15:08.015 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [3]
+18:15:08.015 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [DTH]
+18:15:08.015 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.016 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:15:08.016 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [4]
+18:15:08.016 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Insurance]
+18:15:08.017 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.017 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:15:08.018 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [5]
+18:15:08.019 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Tax]
+18:15:08.019 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.020 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:15:08.021 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [6]
+18:15:08.021 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Credit Card]
+18:15:08.022 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.022 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:15:08.023 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [7]
+18:15:08.024 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Loan account]
+18:15:08.024 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.025 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:15:08.026 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [8]
+18:15:08.027 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_1_] : [VARCHAR]) - [Others]
+18:15:08.028 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.029 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:15:08.030 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.031 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [8]
+18:15:08.032 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.033 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:15:08.033 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.034 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.034 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [7]
+18:15:08.035 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.036 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:15:08.037 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.038 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.038 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [6]
+18:15:08.040 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.040 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:15:08.041 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.041 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.043 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:15:08.045 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.045 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:15:08.046 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.047 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.048 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:15:08.049 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.050 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:15:08.050 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.051 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.051 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:15:08.052 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.053 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:15:08.054 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.054 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.055 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:15:08.056 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.057 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:15:08.058 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.058 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:15:08.059 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:15:08.060 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.060 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:15:08.061 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:15:08.087 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select rolelist0_.user_us_id as user_us_1_4_0_, rolelist0_.role_ro_id as role_ro_2_4_0_, role1_.ro_id as ro_id1_2_1_, role1_.ro_name as ro_name2_2_1_ from user_role rolelist0_ inner join role role1_ on rolelist0_.role_ro_id=role1_.ro_id where rolelist0_.user_us_id=?
+18:15:08.088 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:15:08.090 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_id1_2_1_] : [INTEGER]) - [2]
+18:15:08.091 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ro_name2_2_1_] : [VARCHAR]) - [ROLE_USER]
+18:15:08.091 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [2]
+18:15:08.092 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:15:08.094 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select userlist0_.role_ro_id as role_ro_2_4_0_, userlist0_.user_us_id as user_us_1_4_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from user_role userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.role_ro_id=?
+18:15:08.096 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:15:08.098 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:15:08.099 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:15:08.100 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [2]
+18:15:08.100 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [4]
+18:15:08.101 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_1_] : [VARCHAR]) - [123483643782]
+18:15:08.102 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_1_] : [INTEGER]) - [22]
+18:15:08.102 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_1_] : [VARCHAR]) - [8778314012]
+18:15:08.103 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_1_] : [VARCHAR]) - [ak]
+18:15:08.103 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_1_] : [VARCHAR]) - [Male]
+18:15:08.104 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_1_] : [VARCHAR]) - [g]
+18:15:08.105 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_1_] : [VARCHAR]) - [sjfh7eeh]
+18:15:08.106 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_1_] : [VARCHAR]) - [$2a$10$/2r0dm1Wbt40s50ooFbQie6VwCaIHzdumlekkBt4hGFR1rWgt.wRK]
+18:15:08.107 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_1_] : [VARCHAR]) - [ak]
+18:15:08.108 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([role_ro_2_4_0_] : [INTEGER]) - [2]
+18:15:08.109 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_1_4_0_] : [INTEGER]) - [4]
+18:15:08.110 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:15:08.111 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:15:08.558 [http-nio-1211-exec-8] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:15:15.748 [http-nio-1211-exec-9] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:16:05.286 [http-nio-1211-exec-2] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:16:05.597 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select bill_types0_.bt_id as bt_id1_0_, bill_types0_.bt_name as bt_name2_0_ from bill_types bill_types0_
+18:16:05.657 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [1]
+18:16:05.657 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Electricity]
+18:16:05.658 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [2]
+18:16:05.658 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Telephone]
+18:16:05.659 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [3]
+18:16:05.659 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [DTH]
+18:16:05.660 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [4]
+18:16:05.660 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Insurance]
+18:16:05.661 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [5]
+18:16:05.661 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Tax]
+18:16:05.662 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [6]
+18:16:05.663 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Credit Card]
+18:16:05.664 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [7]
+18:16:05.664 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Loan account]
+18:16:05.665 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_] : [INTEGER]) - [8]
+18:16:05.666 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_name2_0_] : [VARCHAR]) - [Others]
+18:16:05.667 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.668 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [8]
+18:16:05.669 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.670 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_aadha2_3_1_] : [VARCHAR]) - [434666463435]
+18:16:05.670 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_age3_3_1_] : [INTEGER]) - [21]
+18:16:05.671 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_conta4_3_1_] : [VARCHAR]) - [6785467386]
+18:16:05.671 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_first5_3_1_] : [VARCHAR]) - [user]
+18:16:05.671 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_gende6_3_1_] : [VARCHAR]) - [female]
+18:16:05.671 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_lastn7_3_1_] : [VARCHAR]) - [chandran]
+18:16:05.672 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_pan8_3_1_] : [VARCHAR]) - [dhfgg546546]
+18:16:05.672 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_passw9_3_1_] : [VARCHAR]) - [$2a$10$R/lZJuT9skteNmAku9Y7aeutxbOKstD5xE5bHOf74M2PHZipyt3yK]
+18:16:05.672 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_usid10_3_1_] : [VARCHAR]) - [u]
+18:16:05.672 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:16:05.673 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.674 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select billtypeli0_.user_us_id as user_us_4_1_0_, billtypeli0_.bill_types_bill_id as bill_typ3_1_0_, bill_types1_.bt_id as bt_id1_0_1_, bill_types1_.bt_name as bt_name2_0_1_ from bills billtypeli0_ inner join bill_types bill_types1_ on billtypeli0_.bill_types_bill_id=bill_types1_.bt_id where billtypeli0_.user_us_id=?
+18:16:05.674 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:16:05.675 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [1]
+18:16:05.676 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.676 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:16:05.677 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [2]
+18:16:05.678 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.678 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:16:05.679 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [3]
+18:16:05.680 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.681 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:16:05.681 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [4]
+18:16:05.682 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.682 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:16:05.683 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [5]
+18:16:05.683 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.684 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:16:05.684 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [6]
+18:16:05.684 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.684 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:16:05.685 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [7]
+18:16:05.685 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.685 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:16:05.685 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bt_id1_0_1_] : [INTEGER]) - [8]
+18:16:05.686 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.686 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [8]
+18:16:05.687 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.687 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [7]
+18:16:05.688 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.688 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [7]
+18:16:05.689 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.689 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.689 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [6]
+18:16:05.691 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.691 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [6]
+18:16:05.692 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.692 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.693 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:16:05.694 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.694 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [5]
+18:16:05.694 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.695 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.696 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:16:05.697 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.697 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [4]
+18:16:05.698 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.699 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.700 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [3]
+18:16:05.701 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.702 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [3]
+18:16:05.702 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.703 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.703 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:16:05.704 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.705 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [2]
+18:16:05.705 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:16:05.706 [http-nio-1211-exec-2] DEBUG org.hibernate.SQL - select userlist0_.bill_types_bill_id as bill_typ3_1_0_, userlist0_.user_us_id as user_us_4_1_0_, user1_.us_id as us_id1_3_1_, user1_.us_aadharnumber as us_aadha2_3_1_, user1_.us_age as us_age3_3_1_, user1_.us_contactnumber as us_conta4_3_1_, user1_.us_firstname as us_first5_3_1_, user1_.us_gender as us_gende6_3_1_, user1_.us_lastname as us_lastn7_3_1_, user1_.us_pan as us_pan8_3_1_, user1_.us_password as us_passw9_3_1_, user1_.us_usid as us_usid10_3_1_ from bills userlist0_ inner join user user1_ on userlist0_.user_us_id=user1_.us_id where userlist0_.bill_types_bill_id=?
+18:16:05.706 [http-nio-1211-exec-2] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:16:05.707 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([us_id1_3_1_] : [INTEGER]) - [2]
+18:16:05.708 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bill_typ3_1_0_] : [INTEGER]) - [1]
+18:16:05.709 [http-nio-1211-exec-2] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([user_us_4_1_0_] : [INTEGER]) - [2]
+18:18:51.216 [http-nio-1211-exec-5] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:18:51.219 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select bi_amount from bills where user_us_id=? and bill_types_bill_id=?
+18:18:51.220 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:18:51.221 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [3]
+18:18:51.236 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([bi_amount] : [INTEGER]) - [250]
+18:19:32.963 [http-nio-1211-exec-9] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:19:32.968 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:19:32.970 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:19:32.971 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:19:32.972 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:19:32.973 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:19:32.973 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:19:32.974 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:19:32.975 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:19:32.975 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:19:32.976 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:19:32.976 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:32.977 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:19:32.978 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:19:32.979 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:19:32.980 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:19:32.980 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:19:32.981 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:19:32.981 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:19:32.981 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:19:32.982 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:19:32.982 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:19:32.982 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:19:33.378 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:19:33.379 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:19:33.379 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:33.380 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:19:33.380 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:19:33.380 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:19:33.381 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:19:33.381 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:19:33.382 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:19:33.382 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:19:33.383 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:19:33.383 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:19:33.383 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:19:33.383 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:19:33.384 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:19:33.384 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:19:33.384 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:33.384 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:19:33.385 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:19:33.385 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:19:33.385 [http-nio-1211-exec-9] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:19:33.386 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:33.444 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:19:33.445 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:33.446 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:19:33.448 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:33.448 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:19:50.961 [http-nio-1211-exec-1] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:19:50.965 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:19:50.968 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:19:50.969 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:19:50.970 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:19:50.971 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:19:50.971 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:19:50.972 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:19:50.972 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:19:50.973 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:19:50.973 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:19:50.973 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:50.974 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:19:50.974 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:19:50.975 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:19:50.975 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:19:50.976 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:19:50.976 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:19:50.977 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:19:50.978 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:19:50.978 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:19:50.979 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:19:50.979 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:19:50.980 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:19:50.980 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:19:50.981 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:50.982 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:19:50.982 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:19:50.984 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:19:50.985 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:19:50.985 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:19:50.987 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:19:50.987 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:19:50.988 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:19:50.989 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:19:50.989 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:19:50.989 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:19:50.990 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:19:50.990 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:19:50.990 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:19:50.991 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:19:50.991 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:19:50.992 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:19:50.992 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:19:50.993 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:50.993 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:19:50.995 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:50.996 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:19:50.998 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:19:50.999 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:24:12.891 [http-nio-1211-exec-4] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:24:13.107 [http-nio-1211-exec-4] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:24:13.108 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [pk]
+18:24:13.240 [http-nio-1211-exec-4] DEBUG org.hibernate.SQL - insert into user (us_aadharnumber, us_age, us_contactnumber, us_firstname, us_gender, us_lastname, us_pan, us_password, us_usid) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+18:24:13.242 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [24242344444]
+18:24:13.243 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [23]
+18:24:13.243 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [2293777777]
+18:24:13.244 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [pk]
+18:24:13.244 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [Male]
+18:24:13.245 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - [aswin]
+18:24:13.245 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [VARCHAR] - [dsfsfjhf738hd]
+18:24:13.246 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [$2a$10$Lil0kfLOXHAaJG65jpfsoeGxw/qmAK7aQ9tgd0OWXwMTWeXp1boPS]
+18:24:13.247 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [pk]
+18:24:13.326 [http-nio-1211-exec-4] DEBUG org.hibernate.SQL - insert into user_role (user_us_id, role_ro_id) values (?, ?)
+18:24:13.327 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:24:13.328 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [1]
+18:24:25.362 [http-nio-1211-exec-5] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:24:25.372 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:24:25.376 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:24:25.377 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:24:25.378 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:24:25.379 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:24:25.380 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:24:25.380 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:24:25.381 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:24:25.382 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:24:25.383 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:24:25.383 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:24:25.384 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:24:25.384 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:24:25.385 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:24:25.385 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:24:25.386 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:24:25.387 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:24:25.388 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:24:25.388 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:24:25.389 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:24:25.390 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:24:25.390 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:24:25.390 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:24:25.391 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:24:25.392 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:24:25.392 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:24:25.393 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:24:25.394 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:24:25.395 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:24:25.395 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:24:25.396 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:24:25.397 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:24:25.399 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:24:25.401 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:24:25.401 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:24:25.402 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:24:25.403 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:24:25.404 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:24:25.405 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:24:25.406 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:24:25.406 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:24:25.407 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:24:25.407 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:24:25.408 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:24:25.409 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:24:25.411 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:24:25.412 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:24:25.413 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:24:25.414 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:25:38.114 [http-nio-1211-exec-9] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:25:38.120 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - select * from user  where us_usID=?
+18:25:38.121 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [gokul]
+18:25:38.196 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - insert into user (us_aadharnumber, us_age, us_contactnumber, us_firstname, us_gender, us_lastname, us_pan, us_password, us_usid) values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+18:25:38.197 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [34242342432]
+18:25:38.198 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [22]
+18:25:38.199 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [VARCHAR] - [6300125555]
+18:25:38.199 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [gokul]
+18:25:38.200 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [VARCHAR] - [Male]
+18:25:38.201 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - [e]
+18:25:38.201 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [VARCHAR] - [Dsawr3r]
+18:25:38.202 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [$2a$10$4uM8JAWKhLA7nl.G2Z0/ZedGeR7h7/JO9GylEFGJl/Pmf/GVDeFGG]
+18:25:38.202 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [gokul]
+18:25:38.215 [http-nio-1211-exec-9] DEBUG org.hibernate.SQL - insert into user_role (user_us_id, role_ro_id) values (?, ?)
+18:25:38.216 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [6]
+18:25:38.216 [http-nio-1211-exec-9] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [INTEGER] - [2]
+18:26:06.235 [http-nio-1211-exec-1] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:26:06.240 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:26:06.242 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:26:06.242 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:26:06.243 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:26:06.244 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:26:06.245 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:26:06.246 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:26:06.247 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:26:06.247 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:26:06.248 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:26:06.248 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:26:06.248 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:26:06.249 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:26:06.249 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:26:06.249 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:26:06.249 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:26:06.250 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:26:06.250 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:26:06.250 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:26:06.250 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:26:06.251 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:26:06.251 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:26:06.251 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:26:06.252 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:26:06.252 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:26:06.252 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:26:06.252 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:26:06.252 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:26:06.253 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:26:06.253 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:26:06.254 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:26:06.254 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:26:06.255 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:26:06.255 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:26:06.255 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:26:06.256 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:26:06.256 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:26:06.256 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:26:06.256 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:26:06.257 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:26:06.257 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:26:06.258 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:26:06.258 [http-nio-1211-exec-1] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:26:06.259 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:26:06.260 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:26:06.262 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:26:06.263 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:26:06.265 [http-nio-1211-exec-1] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:26:06.265 [http-nio-1211-exec-1] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+18:27:24.056 [http-nio-1211-exec-4] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:27:24.250 [http-nio-1211-exec-4] DEBUG org.hibernate.SQL - insert into vendor (ven_address, ven_certificate_issue, ven_certificate_validity, ven_com_reg_no, ven_contact_number, ven_country, ven_email_address, ven_name, ven_payment, ven_state, ven_type, ven_website, ven_year_of_establishment) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+18:27:24.251 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [VARCHAR] - [sdf3w]
+18:27:24.267 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [2] as [TIMESTAMP] - [Mon Jun 11 05:30:00 IST 2018]
+18:27:24.283 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [3] as [TIMESTAMP] - [Thu Nov 19 05:30:00 IST 2020]
+18:27:24.284 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [4] as [VARCHAR] - [19747]
+18:27:24.284 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [5] as [INTEGER] - [2134241211]
+18:27:24.285 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [6] as [VARCHAR] - [India]
+18:27:24.285 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [7] as [VARCHAR] - [aswinpk@gmail.com]
+18:27:24.285 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [8] as [VARCHAR] - [aswin]
+18:27:24.285 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [9] as [VARCHAR] - [null]
+18:27:24.286 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [10] as [VARCHAR] - [Tamil Nadu]
+18:27:24.286 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [11] as [VARCHAR] - [DTH]
+18:27:24.286 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [12] as [VARCHAR] - [pk@e.com]
+18:27:24.286 [http-nio-1211-exec-4] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [13] as [INTEGER] - [2017]
+18:29:00.258 [http-nio-1211-exec-5] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+18:29:00.263 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendor0_.ven_id as ven_id1_5_, vendor0_.ven_address as ven_addr2_5_, vendor0_.ven_certificate_issue as ven_cert3_5_, vendor0_.ven_certificate_validity as ven_cert4_5_, vendor0_.ven_com_reg_no as ven_com_5_5_, vendor0_.ven_contact_number as ven_cont6_5_, vendor0_.ven_country as ven_coun7_5_, vendor0_.ven_email_address as ven_emai8_5_, vendor0_.ven_name as ven_name9_5_, vendor0_.ven_payment as ven_pay10_5_, vendor0_.ven_state as ven_sta11_5_, vendor0_.ven_type as ven_typ12_5_, vendor0_.ven_website as ven_web13_5_, vendor0_.ven_year_of_establishment as ven_yea14_5_ from vendor vendor0_
+18:29:00.265 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [1]
+18:29:00.266 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [133]
+18:29:00.267 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:29:00.267 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:29:00.268 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12323]
+18:29:00.268 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:29:00.268 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:29:00.269 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:29:00.269 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [a]
+18:29:00.269 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:29:00.270 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Maharastra]
+18:29:00.271 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Electricity]
+18:29:00.271 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@3]
+18:29:00.272 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:29:00.273 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [2]
+18:29:00.273 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [123]
+18:29:00.274 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-21 00:00:00.0]
+18:29:00.275 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-10-26 00:00:00.0]
+18:29:00.275 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [12133]
+18:29:00.276 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [1231232311]
+18:29:00.276 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [Germany]
+18:29:00.278 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [kfek@kd.jkfc]
+18:29:00.279 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [b]
+18:29:00.279 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:29:00.279 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Kerla]
+18:29:00.280 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Telephone]
+18:29:00.280 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [sdfw3@345]
+18:29:00.280 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2011]
+18:29:00.280 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [4]
+18:29:00.280 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sefs]
+18:29:00.281 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2019-11-06 00:00:00.0]
+18:29:00.281 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2021-12-14 00:00:00.0]
+18:29:00.282 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [1233]
+18:29:00.283 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [45353555]
+18:29:00.284 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [USA]
+18:29:00.284 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [sadhasivam@ejfh]
+18:29:00.285 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [u]
+18:29:00.286 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:29:00.287 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Andhra Pradesh]
+18:29:00.287 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [Tax]
+18:29:00.287 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [hesife.com]
+18:29:00.288 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:29:00.288 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_id1_5_] : [INTEGER]) - [5]
+18:29:00.289 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_addr2_5_] : [VARCHAR]) - [sdf3w]
+18:29:00.289 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert3_5_] : [TIMESTAMP]) - [2018-06-11 00:00:00.0]
+18:29:00.290 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cert4_5_] : [TIMESTAMP]) - [2020-11-19 00:00:00.0]
+18:29:00.290 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_com_5_5_] : [VARCHAR]) - [19747]
+18:29:00.291 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_cont6_5_] : [INTEGER]) - [2134241211]
+18:29:00.291 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_coun7_5_] : [VARCHAR]) - [India]
+18:29:00.291 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_emai8_5_] : [VARCHAR]) - [aswinpk@gmail.com]
+18:29:00.291 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_name9_5_] : [VARCHAR]) - [aswin]
+18:29:00.291 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_pay10_5_] : [VARCHAR]) - [null]
+18:29:00.292 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_sta11_5_] : [VARCHAR]) - [Tamil Nadu]
+18:29:00.292 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_typ12_5_] : [VARCHAR]) - [DTH]
+18:29:00.292 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_web13_5_] : [VARCHAR]) - [pk@e.com]
+18:29:00.293 [http-nio-1211-exec-5] TRACE o.h.t.descriptor.sql.BasicExtractor - extracted value ([ven_yea14_5_] : [INTEGER]) - [2017]
+18:29:00.293 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:29:00.294 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [5]
+18:29:00.295 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:29:00.296 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [4]
+18:29:00.297 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:29:00.297 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [2]
+18:29:00.328 [http-nio-1211-exec-5] DEBUG org.hibernate.SQL - select vendorbill0_.vb_bi_id as vb_bi_id1_6_0_, vendorbill0_.vb_ven_id as vb_ven_i2_6_0_, bills1_.bi_id as bi_id1_1_1_, bills1_.bi_amount as bi_amoun2_1_1_, bills1_.bill_types_bill_id as bill_typ3_1_1_, bills1_.user_us_id as user_us_4_1_1_, bill_types2_.bt_id as bt_id1_0_2_, bill_types2_.bt_name as bt_name2_0_2_, user3_.us_id as us_id1_3_3_, user3_.us_aadharnumber as us_aadha2_3_3_, user3_.us_age as us_age3_3_3_, user3_.us_contactnumber as us_conta4_3_3_, user3_.us_firstname as us_first5_3_3_, user3_.us_gender as us_gende6_3_3_, user3_.us_lastname as us_lastn7_3_3_, user3_.us_pan as us_pan8_3_3_, user3_.us_password as us_passw9_3_3_, user3_.us_usid as us_usid10_3_3_ from vendor_bills vendorbill0_ inner join bills bills1_ on vendorbill0_.vb_ven_id=bills1_.bi_id left outer join bill_types bill_types2_ on bills1_.bill_types_bill_id=bill_types2_.bt_id left outer join user user3_ on bills1_.user_us_id=user3_.us_id where vendorbill0_.vb_bi_id=?
+18:29:00.329 [http-nio-1211-exec-5] TRACE o.h.type.descriptor.sql.BasicBinder - binding parameter [1] as [INTEGER] - [1]
+19:42:19.087 [restartedMain] INFO  c.c.b.BillpaymentServiceApplication - No active profile set, falling back to default profiles: default
+19:42:21.810 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data repositories in DEFAULT mode.
+19:42:22.172 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 321ms. Found 4 repository interfaces.
+19:42:22.747 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=92aa5eef-2aa0-39d1-9ad7-0a2cdd8990cc
+19:42:23.235 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:42:23.396 [restartedMain] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$d39c3542] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+19:42:24.475 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1211 (http)
+19:42:24.495 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:42:24.496 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.27]
+19:42:24.702 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:42:24.703 [restartedMain] INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5572 ms
+19:42:25.533 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+19:42:25.798 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate Core {5.4.8.Final}
+19:42:26.281 [restartedMain] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+19:42:26.689 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:42:27.223 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:42:27.299 [restartedMain] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+19:42:29.671 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+19:42:29.693 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+19:42:29.734 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+19:42:29.896 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+19:42:31.499 [restartedMain] INFO  c.c.b.SecurityConfig - Start
+19:42:31.735 [restartedMain] INFO  c.c.b.s.JwtAuthorizationFilter - Start
+19:42:32.192 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e1cc2e, org.springframework.security.web.context.SecurityContextPersistenceFilter@28c59f72, org.springframework.security.web.header.HeaderWriterFilter@452c80bd, org.springframework.web.filter.CorsFilter@7395ade1, org.springframework.security.web.authentication.logout.LogoutFilter@294bfcf7, com.cognizant.billpaymentservice.security.JwtAuthorizationFilter@84befbc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a98314c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@673aeed2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e8803ad, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ac8e24c, org.springframework.security.web.session.SessionManagementFilter@6a232e5f, org.springframework.security.web.access.ExceptionTranslationFilter@52290d17, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4b83b5d9]
+19:42:32.227 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+19:42:32.228 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:42:32.241 [restartedMain] WARN  c.n.c.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+19:42:32.242 [restartedMain] INFO  c.n.c.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+19:42:32.379 [restartedMain] INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+19:42:33.965 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+19:42:35.129 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+19:42:35.173 [restartedMain] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+19:42:35.296 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+19:42:35.479 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+19:42:36.059 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+19:42:36.060 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+19:42:36.272 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+19:42:36.273 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+19:42:36.608 [restartedMain] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+19:42:36.699 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+19:42:36.700 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+19:42:36.700 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+19:42:36.701 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+19:42:36.701 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+19:42:36.701 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: true
+19:42:36.702 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+19:42:37.341 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+19:42:37.343 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+19:42:37.348 [restartedMain] INFO  c.n.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+19:42:37.353 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1575123157351 with initial instances count: 0
+19:42:37.358 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application BILLPAYMENT-SERVICE with eureka with status UP
+19:42:37.359 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1575123157359, current=UP, previous=STARTING]
+19:42:37.364 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BILLPAYMENT-SERVICE/localhost:billpayment-service:1211: registering service...
+19:42:37.583 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 1211 (http) with context path ''
+19:42:37.584 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1211
+19:42:37.696 [DiscoveryClient-InstanceInfoReplicator-0] INFO  c.netflix.discovery.DiscoveryClient - DiscoveryClient_BILLPAYMENT-SERVICE/localhost:billpayment-service:1211 - registration status: 204
+19:42:38.735 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+19:42:38.738 [restartedMain] INFO  c.c.b.BillpaymentServiceApplication - Started BillpaymentServiceApplication in 23.677 seconds (JVM running for 25.823)
+19:43:07.344 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Disable delta property : false
+19:43:07.345 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+19:43:07.345 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+19:43:07.345 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application is null : false
+19:43:07.346 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+19:43:07.347 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Application version is -1: false
+19:43:07.347 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+19:43:07.420 [DiscoveryClient-CacheRefreshExecutor-0] INFO  c.netflix.discovery.DiscoveryClient - The response status is 200
+19:47:36.705 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

@@ -1,5 +1,6 @@
 package com.cognizant.authenticationservice.controller;
 
+
 import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
@@ -7,55 +8,54 @@ import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
-
-import com.cognizant.authenticationservice.model.User;
-import com.cognizant.authenticationservice.repository.UserRepository;
 
 import io.jsonwebtoken.JwtBuilder;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 @RestController
+@CrossOrigin("http://localhost:4200")
 public class AuthenticationController {
-	
-
-	
-	private static final Logger LOGGER = LoggerFactory.getLogger(AuthenticationController.class);
-	@Autowired
-	UserRepository UserRepository;
-	
-	@GetMapping("/authenticate") 
-	public Map<String,String> authenticate(@RequestHeader("Authorization") String authHeader){
-		LOGGER.info("start");
-		LOGGER.info(authHeader);
-		Map<String,String> authmap= new HashMap<String,String>();
-//		authmap.put(generateJwt(getUser(authHeader)),getUser(authHeader));
-		authmap.put("token",generateJwt(getUser(authHeader)));
-//		String role = SecurityContextHolder.getContext().getAuthentication().getAuthorities().toArray()[0].toString();
-		String username =  getUser(authHeader);
-        authmap.put("username", username);
-        User user = UserRepository.findByUsername(username);
-        String role = user.getRoleList().get(0).getRo_name();
-        String firstname = user.getFirst_name();
-        String lastname = user.getLast_name();
-		authmap.put("role", role);
-        authmap.put("firstname", firstname);
-        authmap.put("lastname", lastname);
-        LOGGER.info("END OF AUTH FUNCTION");
-
-		return authmap;
+	private static final Logger logger=LoggerFactory.getLogger(AuthenticationController.class); 
+	public AuthenticationController() {
+		// TODO Auto-generated constructor stub
 	}
-	private String getUser(String authHeader){
-		String user=new String(Base64.getDecoder().decode(authHeader.substring(6)));
-		user= user.substring(0, user.indexOf(":"));
-		LOGGER.info(user);
-		return user;
+	@GetMapping("/authenticate")
+	public Map<String, String> authenticate(@RequestHeader("Authorization") String authHeader)
+	{
+				
+		
+		Map<String, String> temp=new HashMap<String,String>();
+		String user=getUser(authHeader);
+		String role = SecurityContextHolder.getContext().getAuthentication()
+				.getAuthorities().toArray()[0].toString();
+
+		String t=generateJwt(user);
+		temp.put("token",t);
+		temp.put("role", role);
+		logger.debug("token "+t);
+		logger.debug("role "+role);
+		
+		return temp;
 	}
-	private String generateJwt(String user){
+	
+	private String getUser(String authHeader)
+	{
+		String encodedCredentials=authHeader.substring(6);
+    	encodedCredentials = new String(Base64.getDecoder().decode(encodedCredentials));
+    	encodedCredentials=encodedCredentials.substring(0,encodedCredentials.indexOf(":"));
+    	return encodedCredentials;
+
+	}
+	
+	private String generateJwt(String user)
+	{
+		
 		JwtBuilder builder = Jwts.builder();
         builder.setSubject(user);
 
@@ -67,8 +67,8 @@ public class AuthenticationController {
         builder.signWith(SignatureAlgorithm.HS256, "secretkey");
 
         String token = builder.compact();
-        LOGGER.info(token);
+
         return token;
 	}
-
+	
 }
